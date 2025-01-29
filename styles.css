@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
+  --primary-color: #89cff0;
   --text-dark: #171717;
   --text-light: #525252;
   --extra-light: #a3a3a3;
@@ -30,6 +31,10 @@
   text-align: center;
 }
 
+.section__header span {
+  border-bottom: 4px solid var(--primary-color);
+}
+
 .section__description {
   color: var(--text-light);
   line-height: 1.75rem;
@@ -43,7 +48,7 @@
   font-size: 1rem;
   font-weight: 500;
   color: var(--white);
-  background-color: var(--text-dark);
+  background-color: var(--primary-color);
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
@@ -97,25 +102,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  background-color: var(--text-dark);
+  background-color: var(--primary-color);
 }
 
 .nav__logo img {
-  max-width: 70px;
-}
-
-.nav__logo a {
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--white);
-  font-family: var(--header-font);
-  position: relative;
-  z-index: 1;
-  border-bottom: none !important;
-}
-.nav__logo span {
-  font-size: 1rem;
-  font-weight: 400;
+  max-width: 100px;
 }
 
 .nav__menu__btn {
@@ -133,7 +124,7 @@ nav {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  background-color: var(--text-dark);
+  background-color: var(--primary-color);
   transform: translateY(-100%);
   transition: 0.5s;
   z-index: -1;
@@ -243,7 +234,10 @@ nav {
 }
 
 .service {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(
+      rgba(137, 207, 240, 1),
+      rgba(137, 207, 240, 0.5)
+    ),
     url("assets/header.jpg");
   background-position: center center;
   background-size: cover;
@@ -257,7 +251,7 @@ nav {
 .service__container .section__description {
   max-width: 600px;
   margin-inline: auto;
-  color: var(--extra-light);
+  color: var(--white);
 }
 
 .service__grid {
@@ -392,7 +386,7 @@ nav {
 
 #footer {
   color: var(--extra-light);
-  background-color: var(--text-dark);
+  background-color: var(--primary-color);
 }
 
 .footer__container {
@@ -461,15 +455,17 @@ nav {
 }
 
 .footer__col .nav__logo {
-  padding-block: 2rem;
   text-align: center;
+}
+.footer__col .nav__logo img {
+  width: 150px;
 }
 
 .footer__bar {
   padding: 1rem;
   font-size: 0.9rem;
-  color: var(--extra-light);
-  background-color: var(--text-dark);
+  color: var(--white);
+  background-color: var(--primary-color);
   text-align: center;
 }
 
@@ -504,7 +500,7 @@ nav {
   }
 
   .footer__col:nth-child(3) {
-    border-left: 2px solid var(--text-dark);
+    border-left: 2px solid var(--white);
   }
 }
 
