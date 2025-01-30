@@ -109,6 +109,20 @@ nav {
   max-width: 100px;
 }
 
+.nav__logo.text a {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white);
+  font-family: var(--header-font);
+  position: relative;
+  z-index: 1;
+  border-bottom: none !important;
+}
+.nav__logo.text span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .nav__menu__btn {
   font-size: 1.5rem;
   color: var(--white);
