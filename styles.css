@@ -214,14 +214,6 @@ nav {
   content: "Orquídeas";
 }
 
-.flower__card:nth-child(5)::after {
-  content: "Pensamientos";
-}
-
-.flower__card:nth-child(6)::after {
-  content: "Margaritas";
-}
-
 .flower__content {
   position: absolute;
   top: 0;
